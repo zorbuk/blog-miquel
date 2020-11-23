@@ -8,8 +8,8 @@
     <% if (entradas.length > 0) { %>
       <% entradas.forEach(entrada => { %>
         <div class="blog entry">
-            <h2><%= entrada.title %></h2>
-            <p><%= entrada.body %></p>
+            <h2><a href="/blog/<%= entrada._id %>"><%= entrada.title %></a></h2>
+            <p><%= entrada.snippet %></p>
         </div>
       <% }) %>
     <% } else { %>
