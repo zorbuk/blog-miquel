@@ -20,6 +20,7 @@ body{
         }
         p{
             color: #0f0f0f;
+            margin-top: 0px;
         }
         a{
             color: royalblue;
@@ -40,14 +41,20 @@ body{
     }
     div.blog.entry{
         display: block;
-        margin: 20px;
+        width: 90%;
+        margin:auto;
         
         h2{
-            color:lightseagreen;
+            font-size: 1.65em;
         }
         p{
             color: #0f0f0f;
             margin-bottom: 20px;
+            font-size: 1.20em;
+        }
+        a{
+            color:lightseagreen;
+            text-decoration: none;
         }
     }
     
