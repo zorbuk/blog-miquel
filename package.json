@@ -1,0 +1,24 @@
+{
+  "name": "blog-miquel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon -r dotenv/config src/app.js",
+    "sass": "sass --watch src/:public/css/"
+  },
+  "author": "mvr",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "heroku": "^7.47.2",
+    "mongoose": "^5.10.14"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "sass": "^1.29.0"
+  }
+}

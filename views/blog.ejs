@@ -1,0 +1,22 @@
+<html lang="es">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="blogs content">
+    <% if (entradas.length > 0) { %>
+      <% entradas.forEach(entrada => { %>
+        <div class="blog entry">
+            <div class="blog title"><%= entrada.title %><div>
+            <div class="blog body"><%= entrada.body %></div>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>¡No hay entradas!</p>
+    <% } %>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
