@@ -40,6 +40,9 @@ app.get('/', async (req, res) => {
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
 });
+app.get('/blog/:id', (req, res) => {
+    res.render('blogbody', { id: req.params.id })
+});
 
 /* { ----------- API ROUTING ----------- } */
 // EXAMPLE: app.use('/api', modelRouter)
