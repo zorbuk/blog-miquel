@@ -11,6 +11,9 @@ body nav .video {
   right: 0;
   min-width: 100%;
   width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 8px;
 }
 body nav .site-title {
   width: 100%;
