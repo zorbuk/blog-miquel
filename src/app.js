@@ -19,7 +19,7 @@ app.listen(port, ()=>{
 app.set('view engine', 'ejs');
 
 /* { ----------- MIDDLEWARE ----------- } */
-app.use(express.static('../public'));
+app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
