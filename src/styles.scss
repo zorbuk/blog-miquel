@@ -39,14 +39,16 @@ body{
     }
     .blog.entry{
         padding:8px;
-        display:block;
+        display:inline-block;
 
         h2{
             color:lightseagreen;
+            display: block;
         }
         p{
             color: #0f0f0f;
             margin-bottom: 20px;
+            display: block;
         }
     }
     
