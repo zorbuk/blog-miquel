@@ -38,20 +38,17 @@ body{
         border-radius:8px;
     }
     .blog.entry{
-        display: flex;
-        margin:auto;
+        display: block;
         width: 90%;
     }
     .blog.title{
         color:blue;
         border:1px solid red;
-        margin:auto;
         margin:20px;
     }
     .blog.body{
         color: #0f0f0f;
         border:1px solid rebeccapurple;
-        margin:auto;
         margin:20px;
     }
     
