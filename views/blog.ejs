@@ -8,7 +8,7 @@
     <% if (entradas.length > 0) { %>
       <% entradas.forEach(entrada => { %>
         <div class="blog entry">
-            <h2><a href="/blog/<%= entrada._id %>"><%= entrada.title %></a></h2>
+            <h2><a href="/blog/<%= entrada._id %>"><%= entrada.title %></a></h2><br>
             <p><%= entrada.snippet %></p>
         </div>
       <% }) %>
