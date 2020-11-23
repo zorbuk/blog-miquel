@@ -1,7 +1,7 @@
 $bgColor: black;
 $textColor: white;
-$urlColor: blue;
-$blogTitleColor: blue;
+$urlColor: rgb(189, 112, 12);
+$blogTitleColor: rgb(189, 112, 12);
 
 body{
     width: 90%;
@@ -35,6 +35,7 @@ body{
             margin-left: 15px;
         }
         h1{
+            text-shadow: 2px 2px 5px rgb(189, 112, 12);
             margin-left: 15px;
             font-size: 2.5em;
         }
@@ -45,6 +46,11 @@ body{
         a{
             color: $urlColor;
             font-weight: 222;
+            padding:5px;
+            border:1px dashed rgb(189, 112, 12);
+        }
+        a:hover{
+            text-shadow: 2px 2px 5px rgb(255, 255, 255);
         }
     }
     footer{
@@ -64,6 +70,8 @@ body{
         margin:auto;
         
         h2{
+            color:$blogTitleColor;
+            text-shadow: 2px 2px 5px rgb(255, 255, 255);
             font-size: 1.65em;
         }
         p{
