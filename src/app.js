@@ -40,7 +40,7 @@ app.get('/', async (req, res) => {
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
 });
-app.get('/blog/:id', (req, res) => {
+app.get('/blog/:id', async (req, res) => {
     await Entrada.findById(req.params.id).then((data)=>{
         res.render('blogbody', { entrada: data })
     });
