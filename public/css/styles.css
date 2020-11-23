@@ -47,9 +47,34 @@ body nav a {
 body nav a:hover {
   text-shadow: 0px 0px 3px white;
 }
-body label {
+body form {
+  width: 90%;
+  margin: auto;
+}
+body form label {
   color: white;
   font-size: 1.2em;
+}
+body form input[type=text] {
+  padding: 3px;
+  font-size: 1.11em;
+  border: 1px dashed #bd700c;
+  background-color: black;
+  margin-bottom: 5px;
+}
+body form textarea {
+  padding: 3px;
+  font-size: 1.11em;
+  border: 1px dashed #bd700c;
+  background-color: black;
+  margin-bottom: 5px;
+}
+body form input[type=submit] {
+  padding: 3px;
+  font-size: 1.11em;
+  border: 1px dashed #bd700c;
+  background-color: black;
+  margin-bottom: 5px;
 }
 body footer {
   color: white;
