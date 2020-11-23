@@ -56,6 +56,7 @@ body form label {
   font-size: 1.2em;
 }
 body form input[type=text] {
+  color: white;
   padding: 3px;
   font-size: 1.11em;
   border: 1px dashed #bd700c;
@@ -63,6 +64,7 @@ body form input[type=text] {
   margin-bottom: 5px;
 }
 body form textarea {
+  color: white;
   padding: 3px;
   font-size: 1.11em;
   border: 1px dashed #bd700c;
@@ -70,6 +72,7 @@ body form textarea {
   margin-bottom: 5px;
 }
 body form input[type=submit] {
+  color: white;
   padding: 3px;
   font-size: 1.11em;
   border: 1px dashed #bd700c;
