@@ -30,28 +30,22 @@ body footer {
   text-align: center;
   margin: 80px auto 20px;
 }
-body .blogs.content {
+body div.blogs.content {
   width: 90%;
   margin: auto;
   border: 2px solid rosybrown;
   border-radius: 8px;
+  display: inline-block;
 }
-body .blog.entry {
-  display: flex;
-  margin: auto;
-  width: 90%;
+body div.blog.entry {
+  display: block;
 }
-body .blog.title {
-  color: blue;
-  border: 1px solid red;
-  margin: auto;
-  margin: 20px;
+body div.blog.entry h2 {
+  color: lightseagreen;
 }
-body .blog.body {
+body div.blog.entry p {
   color: #0f0f0f;
-  border: 1px solid rebeccapurple;
-  margin: auto;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
