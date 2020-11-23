@@ -20,6 +20,7 @@ body nav h1 {
 }
 body nav p {
   color: #0f0f0f;
+  margin-top: 0px;
 }
 body nav a {
   color: royalblue;
@@ -39,13 +40,20 @@ body div.blogs.content {
 }
 body div.blog.entry {
   display: block;
+  width: 90%;
+  margin: auto;
 }
 body div.blog.entry h2 {
-  color: lightseagreen;
+  font-size: 1.65em;
 }
 body div.blog.entry p {
   color: #0f0f0f;
   margin-bottom: 20px;
+  font-size: 1.2em;
+}
+body div.blog.entry a {
+  color: lightseagreen;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
