@@ -7,16 +7,16 @@ body{
         justify-content: space-between;
 
         .video{
-            position:fixed;
             right: 0;
             min-width: 100%;
         }
         .site-title{
-            width: 100%;
-            padding: 20px;
+            width: 90%;
+            margin:auto;
+            padding: 10px;
             position: fixed;
-            top: 20px;
             background: rgba(0, 0, 0, 0.5);
+            border-radius:8px;
             color: #f1f1f1;
         }
 
