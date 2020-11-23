@@ -31,22 +31,21 @@ body{
         text-align: center;
         margin: 80px auto 20px;
     }
-    .blogs.content{
+    div.blogs.content{
         width: 90%;
         margin:auto;
         border:2px solid rosybrown;
         border-radius:8px;
         display:inline-block;
     }
-    .blog.entry{
+    div.blog.entry{
+        display: block;
         h2{
             color:lightseagreen;
-            display: block;
         }
         p{
             color: #0f0f0f;
             margin-bottom: 20px;
-            display: block;
         }
     }
     
