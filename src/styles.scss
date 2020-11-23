@@ -35,7 +35,7 @@ body{
             margin-left: 15px;
         }
         h1{
-            text-shadow: 2px 2px 5px rgb(189, 112, 12);
+            text-shadow: 0px 0px 3px rgb(189, 112, 12);
             margin-left: 15px;
             font-size: 2.5em;
         }
@@ -50,13 +50,15 @@ body{
             border:1px dashed rgb(189, 112, 12);
         }
         a:hover{
-            text-shadow: 2px 2px 5px rgb(255, 255, 255);
+            text-shadow: 0px 0px 3px rgb(255, 255, 255);
         }
     }
     footer{
         color: $textColor;
         text-align: center;
         margin: 80px auto 20px;
+        padding:5px;
+        border:1px dashed rgb(189, 112, 12);
     }
     div.blogs.content{
         width: 90%;
@@ -71,7 +73,7 @@ body{
         
         h2{
             color:$blogTitleColor;
-            text-shadow: 2px 2px 5px rgb(255, 255, 255);
+            text-shadow: 0px 0px 3px rgb(255, 255, 255);
             font-size: 1.65em;
         }
         p{
@@ -84,5 +86,4 @@ body{
             text-decoration: none;
         }
     }
-    
 }
