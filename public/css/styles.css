@@ -47,6 +47,10 @@ body nav a {
 body nav a:hover {
   text-shadow: 0px 0px 3px white;
 }
+body label {
+  color: white;
+  font-size: 1.2em;
+}
 body footer {
   color: white;
   text-align: center;
