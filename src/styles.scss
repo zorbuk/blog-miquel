@@ -39,13 +39,14 @@ body{
     }
     .blog.entry{
         padding:8px;
-    }
-    .blog.title{
-        padding:8px;
-    }
-    .blog.body{
-        color: #0f0f0f;
-        border:1px solid rebeccapurple;
+
+        h2{
+            color:lightseagreen;
+        }
+        p{
+            color: #0f0f0f;
+            margin-bottom: 20px;
+        }
     }
     
 }
