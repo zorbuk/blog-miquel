@@ -6,6 +6,20 @@ body{
         display:flex;
         justify-content: space-between;
 
+        .video{
+            position:fixed;
+            right: 0;
+            min-width: 100%;
+        }
+        .site-title{
+            width: 100%;
+            padding: 20px;
+            position: fixed;
+            top: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+        }
+
         ul{
             display:flex;
             justify-content: space-between;
