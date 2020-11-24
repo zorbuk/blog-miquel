@@ -8,12 +8,12 @@
     <form id="entrada">
         <input type="hidden" value="<%= entrada._id %>" id="_id">
         <label for="fname">Titulo (*):</label><br>
-        <input type="text" value="<%= entrada.title %>" name="title"><br>
+        <input type="text" value="<%= entrada.title %>" id="title"><br>
         <label for="fname">Snippet (*):</label><br>
-        <textarea name="snippet"><%= entrada.snippet %></textarea><br>
+        <textarea id="snippet"><%= entrada.snippet %></textarea><br>
         <label for="fname">Body (*):</label><br>
-        <textarea name="body"><%= entrada.body %></textarea><br>
-        <input id="submit" value="Modificar">
+        <textarea id="body"><%= entrada.body %></textarea><br>
+        <input type="button" id="submit" value="Modificar">
     </form>
   </div>
 
