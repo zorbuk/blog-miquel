@@ -122,6 +122,16 @@ body div.blog.entry a {
   color: #bd700c;
   text-decoration: none;
 }
+body div.blog.options {
+  width: 90%;
+  margin: auto;
+}
+body div.blog.options h2 {
+  color: #bd700c;
+  font-size: 1.65em;
+  font-family: "Big Shoulders Stencil Display", cursive;
+  border-bottom: 1px dashed #bd700c;
+}
 body div.blog.options a {
   color: #bd700c;
   font-weight: 222;

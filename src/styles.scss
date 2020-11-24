@@ -138,6 +138,15 @@ body{
         }
     }
     div.blog.options{
+        width: 90%;
+        margin:auto;
+
+        h2{
+            color:$blogTitleColor;
+            font-size: 1.65em;
+            font-family: 'Big Shoulders Stencil Display', cursive;
+            border-bottom:1px dashed rgb(189, 112, 12);
+        }
         a{
             color: $urlColor;
             font-weight: 222;
