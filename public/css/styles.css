@@ -44,6 +44,8 @@ body nav h1 {
   font-family: "Big Shoulders Stencil Display", cursive;
 }
 body nav p {
+  width: 90%;
+  margin: auto;
   color: white;
   margin-top: 0px;
 }
