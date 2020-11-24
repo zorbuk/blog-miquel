@@ -18,6 +18,6 @@
             "body":body
         }
       ).then(async(data) =>{
-        window.location.href = "/"
+        window.location.href = `/blog/${blogId}`
       });
     })
