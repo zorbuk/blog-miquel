@@ -16,7 +16,9 @@
             snippet,
             body: bodyBlog
         }
-      await axios.patch(`/api/entradas/${blogId}`, body).then((data) =>{
-        window.location.href = `/blog/${blogId}`
+      axios.patch(`/api/entradas/${blogId}`, body).then(async (data) =>{
+        if(data['data']['updated']){
+            window.location.href = `/blog/${blogId}`
+        }else alert(data['data'])
       });
     })
