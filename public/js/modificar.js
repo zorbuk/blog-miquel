@@ -10,7 +10,7 @@
     const aSubmit = document.getElementById('submit');
 
     // ------------ EVENT LISTENERS
-    aSubmit.addEventListener("click", async ()=>{
+    aSubmit.addEventListener("click", ()=>{
         const body = {
             title,
             snippet,
