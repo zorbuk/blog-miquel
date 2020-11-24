@@ -55,6 +55,7 @@ router.patch('/entradas/:id', async (req, res) => {
             return res.status(404).send()
         }
 
+        window.location.href = `/`;
         //res.send(entrada)
     } catch (e) {
         res.status(400).send(e)
@@ -69,6 +70,7 @@ router.delete('/entradas/:id', async (req, res) => {
             res.status(404).send()
         }
 
+        window.location.href = `/`;
         //res.send(entrada)
     } catch (e) {
         res.status(500).send()

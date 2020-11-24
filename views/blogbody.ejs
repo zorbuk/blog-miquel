@@ -28,19 +28,10 @@
     aModif.addEventListener("click", ()=>{
       window.location.href = `/modificar/${blogId}`;
     })
-    aElim.addEventListener("click", async ()=>{
-      const res = await axios.delete(`/api/entradas/${blogId}`, {
+    aElim.addEventListener("click", ()=>{
+      axios.delete(`/api/entradas/${blogId}`, {
         data: {}
       });
-
-      switch(res.status){
-        case 200:
-        window.location.href = `/`;
-        break;
-        default:
-        throw new Error(`res status: ${res.status}`);
-        break;
-      }
     })
   </script>
 
