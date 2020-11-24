@@ -26,12 +26,14 @@
 
     // ------------ EVENT LISTENERS
     aModif.addEventListener("click", ()=>{
-
+      window.location.href = `/modificar/${blogId}`;
     })
     aElim.addEventListener("click", ()=>{
       axios.delete(`/api/entradas/${blogId}`, {
         data: {}
       });
+
+      window.location.href = "/";
     })
   </script>
 
