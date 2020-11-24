@@ -1,4 +1,5 @@
 const express = require('express')
+const { findByIdAndUpdate } = require('../models/entrada')
 const Entrada = require('../models/entrada')
 const router = new express.Router()
 
@@ -49,12 +50,13 @@ router.patch('/entradas/:id', async (req, res) => {
     }
 
     try {
-        const entrada = await Entrada.findByIdAndUpdate(req.params.id, req.body)
+        const entrada = await Entrada-findByIdAndUpdate(req.params.id, req.body)
 
         if (!entrada) {
             return res.status(404).send()
         }
 
+        console.log(`Updated: ${req.params.id}, body: ${JSON.stringify(req.body)}`)
         res.send()
     } catch (e) {
         res.status(400).send(e)
