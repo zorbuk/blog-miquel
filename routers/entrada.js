@@ -55,9 +55,7 @@ router.patch('/entradas/:id', async (req, res) => {
             return res.status(404).send()
         }
 
-        req.method = 'GET'
-        res.redirect('/');
-        //res.send(entrada)
+        //...
     } catch (e) {
         res.status(400).send(e)
     }
@@ -71,9 +69,7 @@ router.delete('/entradas/:id', async (req, res) => {
             res.status(404).send()
         }
 
-        req.method = 'GET'
-        res.redirect('/');
-        //res.send(entrada)
+        //...
     } catch (e) {
         res.status(500).send()
     }

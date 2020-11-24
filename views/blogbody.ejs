@@ -16,25 +16,9 @@
       </div>
   </div>
 
-  <script>
-    // ------------ BLOG ID
-    const blogId = document.getElementById('_id').value;
-
-    // ------------ CLICKABLE
-    const aModif = document.getElementById('modif');
-    const aElim = document.getElementById('elim');
-
-    // ------------ EVENT LISTENERS
-    aModif.addEventListener("click", ()=>{
-      window.location.href = `/modificar/${blogId}`;
-    })
-    aElim.addEventListener("click", ()=>{
-      axios.delete(`/api/entradas/${blogId}`, {
-        data: {}
-      });
-    })
-  </script>
-
   <%- include("./partials/footer.ejs") %>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="/js/blogbody.js"></script>
 </body>
 </html>

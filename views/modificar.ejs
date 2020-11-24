@@ -5,17 +5,21 @@
   <%- include("./partials/nav.ejs") %>
 
   <div class="blogs content">
-    <form action="/api/entradas/<%= entrada._id %>" method="PATCH" name="entrada">
+    <form id="entrada">
+        <input type="hidden" value="<%= entrada._id %>" id="_id">
         <label for="fname">Titulo (*):</label><br>
         <input type="text" value="<%= entrada.title %>" name="title"><br>
         <label for="fname">Snippet (*):</label><br>
         <textarea name="snippet"><%= entrada.snippet %></textarea><br>
         <label for="fname">Body (*):</label><br>
         <textarea name="body"><%= entrada.body %></textarea><br>
-        <input type="submit" value="Modificar">
+        <input id="submit" value="Modificar">
     </form>
   </div>
 
   <%- include("./partials/footer.ejs") %>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="/js/modificar.js"></script>
 </body>
 </html>
