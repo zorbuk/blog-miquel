@@ -112,6 +112,7 @@ body div.blog.entry h2 {
   color: #bd700c;
   font-size: 1.65em;
   font-family: "Big Shoulders Stencil Display", cursive;
+  border-bottom: 1px dashed #bd700c;
 }
 body div.blog.entry p {
   color: white;
