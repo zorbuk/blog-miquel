@@ -12,6 +12,7 @@
     // ------------ EVENT LISTENERS
     aSubmit.addEventListener("click", ()=>{
         const body = {
+            _id:blogId,
             title,
             snippet,
             body: bodyBlog
