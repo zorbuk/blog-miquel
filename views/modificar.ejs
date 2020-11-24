@@ -1,0 +1,22 @@
+<html lang="es">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="blogs content">
+    <form action="api/entradas" method="PATCH" name="entrada">
+        <input type="text" hidden="hidden" value="<%= entrada._id %>" name="id"><br>
+        <label for="fname">Titulo (*):</label><br>
+        <input type="text" value="<%= entrada.title %>" name="title"><br>
+        <label for="fname">Snippet (*):</label><br>
+        <textarea name="snippet"><%= entrada.snippet %></textarea><br>
+        <label for="fname">Body (*):</label><br>
+        <textarea name="body"><%= entrada.body %></textarea><br>
+        <input type="submit" value="Modificar">
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
