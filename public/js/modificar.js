@@ -4,19 +4,19 @@
     // ------------ VALUES
     const title = document.getElementById('title').value;
     const snippet = document.getElementById('snippet').value;
-    const body = document.getElementById('body').value;
+    const bodyBlog = document.getElementById('body').value;
 
     // ------------ CLICKABLE
     const aSubmit = document.getElementById('submit');
 
     // ------------ EVENT LISTENERS
     aSubmit.addEventListener("click", ()=>{
-        const entrada = {
+        const body = {
             title,
             snippet,
-            body
+            body: bodyBlog
         }
-      axios.patch(`/api/entradas/${blogId}`, entrada).then(async(data) =>{
+      axios.patch(`/api/entradas/${blogId}`, body).then(async(data) =>{
         window.location.href = `/blog/${blogId}`
       });
     })
