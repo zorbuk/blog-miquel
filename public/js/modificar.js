@@ -12,11 +12,11 @@
     // ------------ EVENT LISTENERS
     aSubmit.addEventListener("click", ()=>{
         const body = {
-            title,
-            snippet,
-            body: bodyBlog
+            "title":title,
+            "snippet":snippet,
+            "body": bodyBlog
         }
-      axios.patch(`/api/entradas/${blogId}`, body).then(async (data) =>{
+      axios.patch(`/api/entradas/${blogId}`, body).then(async(data) =>{
         if(data['data']['updated']){
             window.location.href = `/blog/${blogId}`
         }else alert(data['data'])
