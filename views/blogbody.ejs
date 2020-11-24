@@ -30,7 +30,9 @@
     })
     aElim.addEventListener("click", ()=>{
       axios.delete(`/eliminar`, {
-        id:blogId
+        data: {
+          id: blogId
+        }
       });
     })
   </script>
