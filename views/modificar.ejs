@@ -5,7 +5,6 @@
   <%- include("./partials/nav.ejs") %>
 
   <div class="blogs content">
-    <form id="entrada">
         <input type="hidden" value="<%= entrada._id %>" id="_id">
         <label for="fname">Titulo (*):</label><br>
         <input type="text" value="<%= entrada.title %>" id="title"><br>
@@ -14,7 +13,6 @@
         <label for="fname">Body (*):</label><br>
         <textarea id="body"><%= entrada.body %></textarea><br>
         <input type="button" id="submit" value="Modificar">
-    </form>
   </div>
 
   <%- include("./partials/footer.ejs") %>

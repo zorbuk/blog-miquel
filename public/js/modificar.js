@@ -17,6 +17,6 @@
             body
         }
       axios.patch(`/api/entradas/${blogId}`, entrada).then(async(data) =>{
-        //window.location.href = `/blog/${blogId}`
+        window.location.href = `/blog/${blogId}`
       });
     })
