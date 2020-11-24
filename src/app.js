@@ -41,9 +41,12 @@ app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
 });
 app.get('/blog/:id', async (req, res) => {
-    await Entrada.findById(req.params.id).then((data)=>{
+    const data = await Entrada.findById(req.params.id)
+    res.render('blogbody', { entrada: data })
+
+    /*await Entrada.findById(req.params.id).then((data)=>{
         res.render('blogbody', { entrada: data })
-    });
+    });*/
 });
 
 /* { ----------- API ROUTING ----------- } */
