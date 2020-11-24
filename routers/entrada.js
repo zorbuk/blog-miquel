@@ -56,7 +56,7 @@ router.patch('/entradas/:id', async (req, res) => {
             return res.status(404).send()
         }
 
-        return res.send('{"updated":true}')
+        res.send()
     } catch (e) {
         res.status(500).send(e)
     }

@@ -18,8 +18,6 @@
         "snippet": _snippet,
         "body": _bodyBlog
     }).then(async(data) =>{
-        if(data['data']['updated']){
             window.location.href = `/blog/${blogId}`
-        }else alert(data['data'])
       });
     })
