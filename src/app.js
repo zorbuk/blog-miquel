@@ -48,9 +48,16 @@ app.get('/blog/:id', async (req, res) => {
     res.render('blogbody', { entrada: data })
 });
 app.get('/eliminar/:id', async (req, res) => {
-    const data = await Entrada.findByIdAndDelete(req.params.id)
-    res.location(`/# Se ha borrado la publicación con el título: ${data.title}.`);
-    next();
+    await Entrada.findById(req.params.id).then((data) => {
+        if(data.length > 0){
+            await Entrada.findByIdAndDelete(req.params.id);
+            next();
+        }else{
+            await Entrada.find({}).then((data) => {
+                res.render('blog', { entradas: data })
+            });
+        }
+    });
 });
 app.get('/modificar/:id', async (req, res) => {
     const data = await Entrada.findById(req.params.id)
