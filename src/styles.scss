@@ -1,5 +1,4 @@
 @import"https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Big+Shoulders+Stencil+Display:wght@400;500&display=swap";
-@import"https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap";
 
 $bgColor: black;
 $textColor: white;
@@ -60,9 +59,10 @@ body{
             font-weight: 222;
             padding:5px;
             border:1px dashed rgb(189, 112, 12);
-        }
-        a:hover{
-            text-shadow: 0px 0px 3px rgb(255, 255, 255);
+            
+            &:hover{
+                text-shadow: 0px 0px 3px rgb(255, 255, 255);
+            }
         }
     }
 
