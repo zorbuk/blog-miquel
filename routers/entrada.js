@@ -49,13 +49,13 @@ router.patch('/entradas/:id', async (req, res) => {
     }
 
     try {
-        const entrada = await Entrada.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true })
+        const entrada = await Entrada.findByIdAndUpdate(req.params.id, req.body)
 
         if (!entrada) {
             return res.status(404).send()
         }
 
-        //...
+        res.send()
     } catch (e) {
         res.status(400).send(e)
     }
@@ -69,7 +69,7 @@ router.delete('/entradas/:id', async (req, res) => {
             res.status(404).send()
         }
 
-        //...
+        res.send()
     } catch (e) {
         res.status(500).send()
     }
