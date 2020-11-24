@@ -10,14 +10,13 @@
     const aSubmit = document.getElementById('submit');
 
     // ------------ EVENT LISTENERS
-    aSubmit.addEventListener("click", ()=>{
+    aSubmit.addEventListener("click", async ()=>{
         const body = {
-            _id:blogId,
             title,
             snippet,
             body: bodyBlog
         }
-      axios.patch(`/api/entradas/${blogId}`, body).then((data) =>{
+      await axios.patch(`/api/entradas/${blogId}`, body).then((data) =>{
         window.location.href = `/blog/${blogId}`
       });
     })
