@@ -43,6 +43,10 @@ app.get('/', async (req, res) => {
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
 });
+app.get('/modificar/:id', async (req, res) => {
+    const data = await Entrada.findById(req.params.id)
+    res.render('modificar', { entrada: data })
+});
 app.get('/blog/:id', async (req, res) => {
     const data = await Entrada.findById(req.params.id)
     res.render('blogbody', { entrada: data })
