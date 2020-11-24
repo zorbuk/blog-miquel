@@ -50,7 +50,7 @@ router.patch('/entradas/:id', async (req, res) => {
     }
 
     try {
-        const entrada = await Entrada-findByIdAndUpdate(req.params.id, req.body)
+        const entrada = await Entrada.findByIdAndUpdate(req.params.id, req.body)
 
         if (!entrada) {
             return res.status(404).send()
