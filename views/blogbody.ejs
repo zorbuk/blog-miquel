@@ -29,7 +29,7 @@
       window.location.href = `/modificar/${blogId}`;
     })
     aElim.addEventListener("click", async ()=>{
-      const res = axios.delete(`/api/entradas/${blogId}`, {
+      const res = await axios.delete(`/api/entradas/${blogId}`, {
         data: {}
       });
 
