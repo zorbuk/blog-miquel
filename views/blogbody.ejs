@@ -3,13 +3,37 @@
 
 <body>
   <%- include("./partials/nav.ejs") %>
+  <input hidden="hidden" id="_id" value="<%= entrada._id %>">
 
   <div class="blogs content">
         <div class="blog entry">
             <h2><%= entrada.title %></h2>
-            <p><%= entrada.body %></p>     
+            <p><%= entrada.body %></p>
         </div>
+        <div class="blog options">
+          <h2>Opciones</h2>
+          <p><a id="modif">Modificar</a> <a id="elim">Eliminar</a></p>
+      </div>
   </div>
+
+  <script>
+    // ------------ BLOG ID
+    const blogId = document.getElementById('_id').value;
+
+    // ------------ CLICKABLE
+    const aModif = document.getElementById('modif');
+    const aElim = document.getElementById('elim');
+
+    // ------------ EVENT LISTENERS
+    aModif.addEventListener("click", ()=>{
+
+    })
+    aElim.addEventListener("click", ()=>{
+      axios.delete(`/eliminar/${blogId}`, {
+        id: blogId
+      })
+    })
+  </script>
 
   <%- include("./partials/footer.ejs") %>
 </body>

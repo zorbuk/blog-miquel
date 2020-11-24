@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 
+/* { ----------- AXIOS ----------- } */
+const axios = require('axios');
+
 /* { ----------- MODELS & ROUTERS ----------- } */
 require("../db/mongoose");
 const Entrada = require('../models/entrada');
@@ -43,10 +46,15 @@ app.get('/crear-entrada', (req, res) => {
 app.get('/blog/:id', async (req, res) => {
     const data = await Entrada.findById(req.params.id)
     res.render('blogbody', { entrada: data })
-
-    /*await Entrada.findById(req.params.id).then((data)=>{
-        res.render('blogbody', { entrada: data })
-    });*/
+});
+app.get('/eliminar/:id', async (req, res) => {
+    const data = await Entrada.findByIdAndDelete(req.params.id)
+    res.location(`/# Se ha borrado la publicación con el título: ${data.title}.`);
+    next();
+});
+app.get('/modificar/:id', async (req, res) => {
+    const data = await Entrada.findById(req.params.id)
+    res.render('modificar', { entrada: data })
 });
 
 /* { ----------- API ROUTING ----------- } */
