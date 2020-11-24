@@ -16,7 +16,7 @@
             snippet,
             body: bodyBlog
         }
-      axios.patch(`/api/entradas/${blogId}`, body).then(async(data) =>{
+      axios.patch(`/api/entradas/${blogId}`, body).then((data) =>{
         window.location.href = `/blog/${blogId}`
       });
     })
