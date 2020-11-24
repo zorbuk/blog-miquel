@@ -11,7 +11,7 @@
 
     // ------------ EVENT LISTENERS
     aSubmit.addEventListener("click", ()=>{
-        const body = {
+        let body = {
             "title":title,
             "snippet":snippet,
             "body": bodyBlog
