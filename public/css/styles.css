@@ -1,7 +1,10 @@
+@import "https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Big+Shoulders+Stencil+Display:wght@400;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap";
 body {
   width: 90%;
   margin: auto;
   background-color: black;
+  font-family: "Barlow", sans-serif;
 }
 body audio {
   display: none;
@@ -37,6 +40,7 @@ body nav h1 {
   text-shadow: 0px 0px 3px #bd700c;
   margin-left: 15px;
   font-size: 2.5em;
+  font-family: "Big Shoulders Stencil Display", cursive;
 }
 body nav p {
   color: white;
@@ -104,6 +108,7 @@ body div.blog.entry {
 body div.blog.entry h2 {
   color: #bd700c;
   font-size: 1.65em;
+  font-family: "Big Shoulders Stencil Display", cursive;
 }
 body div.blog.entry p {
   color: white;
