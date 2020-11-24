@@ -47,22 +47,6 @@ app.get('/blog/:id', async (req, res) => {
     const data = await Entrada.findById(req.params.id)
     res.render('blogbody', { entrada: data })
 });
-app.get('/eliminar/:id', async (req, res) => {
-    await Entrada.findById(req.params.id).then((data) => {
-        if(data.length > 0){
-            await Entrada.findByIdAndDelete(req.params.id);
-            next();
-        }else{
-            await Entrada.find({}).then((data) => {
-                res.render('blog', { entradas: data })
-            });
-        }
-    });
-});
-app.get('/modificar/:id', async (req, res) => {
-    const data = await Entrada.findById(req.params.id)
-    res.render('modificar', { entrada: data })
-});
 
 /* { ----------- API ROUTING ----------- } */
 // EXAMPLE: app.use('/api', modelRouter)

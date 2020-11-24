@@ -55,7 +55,8 @@ router.patch('/entradas/:id', async (req, res) => {
             return res.status(404).send()
         }
 
-        res.send(entrada)
+        //res.send(entrada)
+        res.redirect('/');
     } catch (e) {
         res.status(400).send(e)
     }
@@ -69,7 +70,8 @@ router.delete('/entradas/:id', async (req, res) => {
             res.status(404).send()
         }
 
-        res.send(entrada)
+        //res.send(entrada)
+        res.redirect('/');
     } catch (e) {
         res.status(500).send()
     }
