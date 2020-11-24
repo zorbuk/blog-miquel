@@ -5,14 +5,16 @@
   <%- include("./partials/nav.ejs") %>
 
   <div class="blogs content">
-        <input type="hidden" value="<%= entrada._id %>" id="_id">
+    <form>
+        <input type="hidden" value="<%= entrada._id %>" id="bid">
         <label for="fname">Titulo (*):</label><br>
         <input type="text" value="<%= entrada.title %>" id="title"><br>
         <label for="fname">Snippet (*):</label><br>
         <textarea id="snippet"><%= entrada.snippet %></textarea><br>
         <label for="fname">Body (*):</label><br>
         <textarea id="body"><%= entrada.body %></textarea><br>
-        <input type="button" id="submit" value="Modificar">
+        <a id="submit">Modificar</a>
+      </form>
   </div>
 
   <%- include("./partials/footer.ejs") %>

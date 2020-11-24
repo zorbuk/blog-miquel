@@ -1,5 +1,5 @@
     // ------------ BLOG ID
-    const blogId = document.getElementById('_id').value;
+    const blogId = document.getElementById('bid').value;
     
     // ------------ VALUES
     const title = document.getElementById('title').value;
