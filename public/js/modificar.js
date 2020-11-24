@@ -12,7 +12,7 @@
     // ------------ EVENT LISTENERS
     aSubmit.addEventListener("click", ()=>{
       axios.patch(`/api/entradas/${blogId}`, 
-        data:{
+        data={
             "title":title,
             "snippet":snippet,
             "body":body
