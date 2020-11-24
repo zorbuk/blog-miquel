@@ -1,3 +1,6 @@
+@import"https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Big+Shoulders+Stencil+Display:wght@400;500&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap";
+
 $bgColor: black;
 $textColor: white;
 $urlColor: rgb(189, 112, 12);
@@ -7,6 +10,7 @@ body{
     width: 90%;
     margin: auto;
     background-color:$bgColor;
+    font-family: 'Barlow', sans-serif;
 
     audio{
         display: none;
@@ -42,6 +46,7 @@ body{
             text-shadow: 0px 0px 3px rgb(189, 112, 12);
             margin-left: 15px;
             font-size: 2.5em;
+            font-family: 'Big Shoulders Stencil Display', cursive;
         }
         p{
             color: $textColor;
@@ -56,6 +61,10 @@ body{
         a:hover{
             text-shadow: 0px 0px 3px rgb(255, 255, 255);
         }
+    }
+
+    @media only screen and (min-height: 400px) {
+        
     }
     
     form{
@@ -112,6 +121,7 @@ body{
         h2{
             color:$blogTitleColor;
             font-size: 1.65em;
+            font-family: 'Big Shoulders Stencil Display', cursive;
         }
         p{
             color: $textColor;
