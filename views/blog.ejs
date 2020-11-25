@@ -4,10 +4,11 @@
 <body>
   <%- include("./partials/nav.ejs") %>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="/js/entradas.js"></script>
 
   <div class="blogs content">
-    <% if (entradas.length > 0) { %>
+    <% 
+    let entradas = await axios.get(`/api/entradas`)
+    if (entradas.length > 0) { %>
       <% entradas.forEach(entrada => { %>
         <div class="blog entry">
             <h2><a href="/blog/<%= entrada._id %>"><%= entrada.title %></a></h2>
