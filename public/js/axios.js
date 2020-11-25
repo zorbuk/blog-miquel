@@ -9,9 +9,9 @@ postRequest.addEventListener('click', async (e)=>{
 
     const resultado = await axios.post('http://blog-miquel.herokuapp.com/api/entradas', { 
         data: {
-        'title': _title,
-        'snippet': _snippet,
-        'body': _bodyBlog
+        'title': 'CLON',
+        'snippet': 'BRRR',
+        'body': 'YEY'
         }
     })
 })
