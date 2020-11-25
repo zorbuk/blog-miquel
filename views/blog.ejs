@@ -7,8 +7,8 @@
   <%- 
   let entradas = ''
 
-  axios.get(`/api/entradas`)
-  .then((data) =>{
+  await axios.get(`/api/entradas`)
+  .then(async (data) =>{
         entradas = data;
   })
   %>
