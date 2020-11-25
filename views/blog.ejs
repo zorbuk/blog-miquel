@@ -1,11 +1,10 @@
 <html lang="es">
 <%- include("./partials/head.ejs") %>
 
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js/body.js"></script>
 <body>
   <%- include("./partials/nav.ejs") %>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="/js/body.js"></script>
 
   <div class="blogs content">
     <% if (entradas.length > 0) { %>
