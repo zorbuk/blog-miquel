@@ -7,7 +7,10 @@
 
   <div class="blogs content">
     <% 
-    let entradas = ''
+    let entradas = axios.post(`/api/entradas`).then(async(data) =>{
+          return data;
+    })
+
     if (entradas.length > 0) { %>
       <% entradas.forEach(entrada => { %>
         <div class="blog entry">
