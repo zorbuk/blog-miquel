@@ -4,7 +4,14 @@
 <body>
   <%- include("./partials/nav.ejs") %>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <%- let entradas = await axios.get(`/api/entradas`) %>
+  <%- let entradas = ''
+
+  axios.patch(`/api/entradas/${blogId}`)
+  .then(async(data) =>{
+        entradas = data;
+  });
+  
+  %>
 
   <div class="blogs content">
     <% if (entradas.length > 0) { %>
