@@ -7,10 +7,9 @@
   <%- let entradas = ''
 
   axios.patch(`/api/entradas/${blogId}`)
-  .then(async(data) =>{
+  .then((data) =>{
         entradas = data;
-  });
-  
+  })
   %>
 
   <div class="blogs content">
