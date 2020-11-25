@@ -17,5 +17,7 @@
         "title": _title,
         "snippet": _snippet,
         "body": _bodyBlog
-        });
+        }).then(async(data) =>{
+            window.location.href = `/`
+      });
     })
