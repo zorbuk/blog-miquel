@@ -39,8 +39,9 @@ app.get('/', async (req, res) => {
     /*await Entrada.find({}).then((data) => {
             res.render('blog', { entradas: data })
         });*/
-        const entradas = await axios.get('http://blog-miquel.herokuapp.com/api/entradas');
+        let entradas = await axios.get('http://blog-miquel.herokuapp.com/api/entradas');
         res.render('blog', { entradas })
+        console.log(entradas)
 });
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
