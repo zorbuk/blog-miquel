@@ -36,7 +36,9 @@ app.use((req, res, next) => {
 
 /* { ----------- RUTAS WEB ----------- } */
 app.get('/', async (req, res) => {
-    res.render('blog', {  })
+    await Entrada.find({}).then((data) => {
+            res.render('blog', { entradas: data })
+        });
 });
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })

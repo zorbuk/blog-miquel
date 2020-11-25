@@ -18,6 +18,7 @@ router.post('/entradas', async (req, res) => {
 router.get('/entradas', async (req, res) => {
     try {
         const entrada = await Entrada.find({})
+        
         res.send(entrada)
     } catch (e) {
         res.status(500).send()
