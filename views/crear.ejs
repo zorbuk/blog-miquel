@@ -19,3 +19,28 @@
   <%- include("./partials/footer.ejs") %>
 </body>
 </html>
+
+<html lang="es">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="blogs content">
+    <form>
+        <label for="fname">Titulo (*):</label><br>
+        <input type="text" value="" id="title"><br>
+        <label for="fname">Snippet (*):</label><br>
+        <textarea id="snippet"></textarea><br>
+        <label for="fname">Body (*):</label><br>
+        <textarea id="body"></textarea><br>
+        <a id="submit">Crear</a>
+      </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="/js/crear.js"></script>
+</body>
+</html>

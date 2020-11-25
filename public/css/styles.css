@@ -81,7 +81,7 @@ body form textarea {
   background-color: black;
   margin-bottom: 5px;
 }
-body form input[type=submit] {
+body form input[type=submit], body form a#submit {
   color: white;
   padding: 3px;
   font-size: 1.11em;
