@@ -8,7 +8,7 @@ postRequest.addEventListener('click', async (e)=>{
     e.preventDefault()
 
     const resultado = await axios.post('http://blog-miquel.herokuapp.com/api/entradas', { 
-        data: {
+        entrada: {
         'title': 'CLON',
         'snippet': 'BRRR',
         'body': 'YEY'
