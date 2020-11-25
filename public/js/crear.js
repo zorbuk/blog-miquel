@@ -13,7 +13,7 @@
         _snippet = document.getElementById('snippet').value;
         _bodyBlog = document.getElementById('body').value;
 
-      axios.post(`/api/entradas/${blogId}`, {
+      axios.post(`/api/entradas`, {
         "title": _title,
         "snippet": _snippet,
         "body": _bodyBlog
