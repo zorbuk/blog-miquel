@@ -7,7 +7,7 @@
 
   <div class="blogs content">
     <% 
-    let entradas = axios.get(`/api/entradas`)
+    let entradas = ''
     if (entradas.length > 0) { %>
       <% entradas.forEach(entrada => { %>
         <div class="blog entry">
