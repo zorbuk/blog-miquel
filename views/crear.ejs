@@ -5,28 +5,6 @@
   <%- include("./partials/nav.ejs") %>
 
   <div class="blogs content">
-    <form action="api/entradas" method="POST" name="entrada">
-        <label for="fname">Titulo (*):</label><br>
-        <input type="text" name="title"><br>
-        <label for="fname">Snippet (*):</label><br>
-        <textarea name="snippet"></textarea><br>
-        <label for="fname">Body (*):</label><br>
-        <textarea name="body"></textarea><br>
-        <input type="submit" value="Publicar">
-    </form>
-  </div>
-
-  <%- include("./partials/footer.ejs") %>
-</body>
-</html>
-
-<html lang="es">
-<%- include("./partials/head.ejs") %>
-
-<body>
-  <%- include("./partials/nav.ejs") %>
-
-  <div class="blogs content">
     <form>
         <label for="fname">Titulo (*):</label><br>
         <input type="text" value="" id="title"><br>
