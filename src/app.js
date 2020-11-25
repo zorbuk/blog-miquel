@@ -36,15 +36,16 @@ app.use((req, res, next) => {
 
 /* { ----------- RUTAS WEB ----------- } */
 app.get('/', async (req, res) => {
-    /*await Entrada.find({}).then((data) => {
+    await Entrada.find({}).then((data) => {
             res.render('blog', { entradas: data })
-        });*/
-        let entradas = await axios.get('http://blog-miquel.herokuapp.com/api/entradas');
-        res.render('blog', { entradas })
-        console.log(entradas)
+        });
+    console.log(entradas)
 });
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
+});
+app.get('/interfaz', (req, res) => {
+    res.render('interfaz', {  })
 });
 app.get('/modificar/:id', async (req, res) => {
     const data = await Entrada.findById(req.params.id)
