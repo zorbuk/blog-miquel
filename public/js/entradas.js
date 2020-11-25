@@ -1,0 +1,1 @@
+let entradas = axios.get(`/api/entradas`, { });
