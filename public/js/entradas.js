@@ -1,1 +1,1 @@
-let entradas = axios.get(`/api/entradas`, { });
+let entradas = await axios.get(`/api/entradas`, { });
