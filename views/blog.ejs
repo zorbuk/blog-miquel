@@ -1,17 +1,15 @@
 <html lang="es">
 <%- include("./partials/head.ejs") %>
 
+
 <body>
   <%- include("./partials/nav.ejs") %>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/js/body.js"></script>
 
   <div class="blogs content">
-    <% 
-    let entradas = axios.post(`/api/entradas`).then(async(data) =>{
-          return data;
-    })
-
-    if (entradas.length > 0) { %>
+    let entradas = ''
+    <% if (entradas.length > 0) { %>
       <% entradas.forEach(entrada => { %>
         <div class="blog entry">
             <h2><a href="/blog/<%= entrada._id %>"><%= entrada.title %></a></h2>
