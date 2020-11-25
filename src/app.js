@@ -36,9 +36,12 @@ app.use((req, res, next) => {
 
 /* { ----------- RUTAS WEB ----------- } */
 app.get('/', async (req, res) => {
-    await Entrada.find({}).then((data) => {
+    /*await Entrada.find({}).then((data) => {
             res.render('blog', { entradas: data })
-        });
+        });*/
+    
+    const resultado = await axios.get('http://blog-miquel.herokuapp.com/api/entradas')
+    res.render('blog', { entradas: resultado.data })
     console.log(entradas)
 });
 app.get('/crear-entrada', (req, res) => {
