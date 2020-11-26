@@ -47,6 +47,9 @@ app.get('/', async (req, res) => {
 app.get('/crear-entrada', (req, res) => {
     res.render('crear', {  })
 });
+app.get('/tiempo', (req, res) => {
+    res.render('tiempo', {  })
+});
 app.get('/interfaz', (req, res) => {
     res.render('interfaz', {  })
 });
