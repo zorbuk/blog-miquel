@@ -8,5 +8,7 @@ readRequest.addEventListener('click', async (e)=>{
 
     const resultado = await axios.get('http://api.openweathermap.org/data/2.5/weather?id=3111933&appid=e927f468beb5e30dc31289b3be04ad74')
 
-    pTiempo.innerHTML = `El tiempo en reus: ${JSON.stringify(resultado)}`;
+    console.log(resultado)
+
+    pTiempo.innerHTML = `El tiempo en reus: ${JSON.stringify(resultado.weather)}`;
 })
