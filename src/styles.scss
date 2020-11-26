@@ -122,6 +122,17 @@ body{
             color: $textColor;
             margin-top: 0px;
         }
+
+        a{
+            color: $urlColor;
+            font-weight: 222;
+            padding:5px;
+            border:1px dashed rgb(189, 112, 12);
+
+            &:hover{
+                text-shadow: 0px 0px 3px rgb(255, 255, 255);
+            }
+        }
     }
     div.blog.entry{
         display: block;
