@@ -116,6 +116,13 @@ body{
         border-radius:8px;
         display:inline-block;
 
+        h2{
+            color:$blogTitleColor;
+            font-size: 1.65em;
+            font-family: 'Big Shoulders Stencil Display', cursive;
+            border-bottom:1px dashed rgb(189, 112, 12);
+        }
+        
         p{
             width: 90%;
             margin: auto;
