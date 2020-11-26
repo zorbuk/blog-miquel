@@ -102,6 +102,12 @@ body div.blogs.content {
   border-radius: 8px;
   display: inline-block;
 }
+body div.blogs.content p {
+  width: 90%;
+  margin: auto;
+  color: white;
+  margin-top: 0px;
+}
 body div.blog.entry {
   display: block;
   width: 90%;

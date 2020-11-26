@@ -115,6 +115,13 @@ body{
         margin:auto;
         border-radius:8px;
         display:inline-block;
+
+        p{
+            width: 90%;
+            margin: auto;
+            color: $textColor;
+            margin-top: 0px;
+        }
     }
     div.blog.entry{
         display: block;

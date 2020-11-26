@@ -10,5 +10,5 @@ readRequest.addEventListener('click', async (e)=>{
 
     console.log(resultado)
 
-    pTiempo.innerHTML = `El tiempo en reus: ${JSON.stringify(resultado.weather)}`;
+    pTiempo.innerHTML = `El tiempo en Reus:<br> ${resultado.data.weather[0].main}`;
 })
